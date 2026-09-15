@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Aug 06, 2025 at 07:28 PM
+-- Generation Time: Sep 15, 2026 at 01:03 PM
 -- Server version: 10.4.32-MariaDB
--- PHP Version: 8.2.12
+-- PHP Version: 8.0.30
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -198,11 +198,7 @@ INSERT INTO `order_detail` (`order_id`, `item_id`, `item_name`, `item_price`, `q
 ('O050725644', 'B00', 'Plain Paratha', 10, 2, 5),
 ('O050725644', 'B06', 'Mixed Vegetable', 25, 1, 6),
 ('O050725694', 'D04', 'Coffee', 15, 1, 7),
-('O050725694', 'D05', 'Lemon Juice', 15, 1, 8),
-('O050725076', 'S01', 'Shingara', 10, 3, 9),
-('O050725076', 'S08', 'Noodles', 30, 2, 10),
-('O050725136', 'D01', 'Milk', 10, 2, 11),
-('O050725136', 'D07', 'Soft Drinks', 25, 2, 12);
+('O050725694', 'D05', 'Lemon Juice', 15, 1, 8);
 
 -- --------------------------------------------------------
 
@@ -279,12 +275,12 @@ CREATE TABLE `student_record` (
 --
 
 INSERT INTO `student_record` (`student_id`, `stu_name`, `email`, `department`, `semester`, `varsity_pin`) VALUES
-('C223202', 'Akhi Moon Jahan', 'c223202@ugrad.iiuc.ac.bd', 'CSE', 6, 'VP223213'),
-('C223204', 'Ayesha Hasan', 'c223204@ugrad.iiuc.ac.bd', 'CSE', 6, 'VP223211'),
-('C223206', 'Fayeza Afrah Hissan', 'c223206@ugrad.iiuc.ac.bd', 'CSE', 6, 'VP221113'),
-('C223207', 'Zannatun Naima', 'c223207@ugrad.iiuc.ac.bd', 'CSE', 6, 'VP222601'),
-('C223210', 'Fahmida Yasmin', 'c223210@ugrad.iiuc.ac.bd', 'CSE', 6, 'VP221010'),
-('C223229', 'Israth Jahan Worthy', 'c223229@ugrad.iiuc.ac.bd', 'CSE', 6, 'VP223229');
+('C223202', 'Akhi Moon Jahan', 'c223202@ugrad.iiuc.ac.bd', 'CSE', 8, 'VP223213'),
+('C223204', 'Ayesha Hasan', 'c223204@ugrad.iiuc.ac.bd', 'CSE', 8, 'VP223211'),
+('C223206', 'Fayeza Afrah Hissan', 'c223206@ugrad.iiuc.ac.bd', 'CSE', 8, 'VP221113'),
+('C223207', 'Zannatun Naima', 'c223207@ugrad.iiuc.ac.bd', 'CSE', 8, 'VP222601'),
+('C223210', 'Fahmida Yasmin', 'c223210@ugrad.iiuc.ac.bd', 'CSE', 8, 'VP221010'),
+('C223229', 'Israth Jahan Worthy', 'c223229@ugrad.iiuc.ac.bd', 'CSE', 8, 'VP223229');
 
 -- --------------------------------------------------------
 
@@ -308,8 +304,7 @@ CREATE TABLE `stu_info` (
 --
 
 INSERT INTO `stu_info` (`student_id`, `stu_name`, `email`, `password`, `department`, `semester`, `varsity_pin`, `meal_cn`) VALUES
-('C223202', 'Akhi Moon Jahan', 'c223202@ugrad.iiuc.ac.bd', '$2y$10$Uf9BfWNGMeGVNIKXlqr5YORPaxb9IPluR8p0a3go3eG3N5aCPm/Iu', 'CSE', 6, 'VP223213', 'MC202213'),
-('C223204', 'Ayesha Hasan', 'c223204@ugrad.iiuc.ac.bd', '$2y$10$v5nTowFG4rrNXECGs3EiYeelEG0SFKxdUWffP7yn3eD5ylNJflj.i', 'CSE', 6, 'VP223211', 'MC204211'),
+('C223202', 'Akhi Moon Jahan', 'c223202@ugrad.iiuc.ac.bd', '$2y$10$xjMXIsrdjYlfjUuzTbqKA.Lu.vnB/1KA5rRLt5xBc.ltlIwJJESX2', 'CSE', 8, 'VP223213', 'MC202213'),
 ('C223206', 'Fayeza Afrah Hissan', 'c223206@ugrad.iiuc.ac.bd', '$2y$10$76zSzv1/s5hLtkh1qqY2k.y.3l0xd8JAT9i9D0adgqv/BucXNj2Pm', 'CSE', 6, 'VP221113', 'MC206113'),
 ('C223229', 'Israth Jahan Worthy', 'c223229@ugrad.iiuc.ac.bd', '$2y$10$cAOIN44kX2jAw.H9LZWrveSKEp0tag6bBDqsjWdXTV0fg/f7wk5.e', 'CSE', 5, 'VP223229', 'MC229229');
 
@@ -400,7 +395,7 @@ ALTER TABLE `drinks`
 -- AUTO_INCREMENT for table `health_metrics`
 --
 ALTER TABLE `health_metrics`
-  MODIFY `num` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `num` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT for table `lunch`
